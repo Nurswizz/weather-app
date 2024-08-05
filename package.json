@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "version": "0.0.1",
+  "description": "weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurswizz/weather-app.git"
+  },
+  "keywords": [
+    "weather",
+    "app"
+  ],
+  "author": "Nurswizz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nurswizz/weather-app/issues"
+  },
+  "homepage": "https://github.com/Nurswizz/weather-app#readme",
+  "dependencies": {
+    "axios": "^1.7.3"
+  }
+}

@@ -6,18 +6,19 @@
     <title>Weather App</title>
 </head>
 <body>
-    <h1>Astana Weather</h1>
+    <h1>Weather</h1>
+    <form action="/" method="GET">
+        <label>City:</label><br>
+        <input type="text" name="city"><br>
+        <button type="submit">Check</button>
+      </form>
     <div class="content">
-        <ul style="list-style-type: none">
-            <li><% for( let index = 0; index < data.length; index++ ) { %>
-                <div>
-                    <h3><%= days[index] %></h3>
-                    <p><%= data[index] %></p>
-                </div>
-            <% } %>
-                
-            </li>
-        </ul>
+        <% if (data && !error) { %>
+            <h3><%= Math.round(data.main.temp - 273) %>°C</h3>
+            <h3><%= data.weather.main%></h3>
+        <% }else { %>
+         <h3><%= error %></h3>
+         <%  }  %>
     </div>
 </body>
 </html>
